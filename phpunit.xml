@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<phpunit
+        bootstrap="test/bootstrap.php"
+        cacheResult="false">
+    <testsuites>
+        <testsuite name="All">
+            <directory>test</directory>
+        </testsuite>
+    </testsuites>
+
+    <coverage processUncoveredFiles="true">
+        <include>
+            <directory suffix="Test.php">lib</directory>
+        </include>
+    </coverage>
+</phpunit>
